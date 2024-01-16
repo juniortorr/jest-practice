@@ -1,0 +1,12 @@
+{
+  "name": "jest-practice",
+  "version": "1.0.0",
+  "description": "- a practice repo for learning the ins and outs of jest",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
