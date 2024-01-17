@@ -26,4 +26,18 @@ const getMax = (arr, obj) => {
   return obj;
 };
 
-export { getAverage, getMin, getMax };
+const getLength = (arr, obj) => {
+  obj.length = arr.length;
+  return obj;
+};
+
+const analyzeArray = (arr) => {
+  let obj = {};
+  getAverage(arr, obj);
+  getMin(arr, obj);
+  getMax(arr, obj);
+  getLength(arr, obj);
+  return obj;
+};
+
+export { getAverage, getMin, getMax, getLength, analyzeArray };
