@@ -1,4 +1,4 @@
-import { alphabet, caesarCypher, cbeckPunctuation } from '../helpers/caesar-cypher';
+import { alphabet, caesarCypher } from '../helpers/caesar-cypher';
 
 test('return string of letters shifted', () => {
   expect(caesarCypher('abc', 1)).toMatch(/bcd/);
@@ -14,4 +14,8 @@ test('handle commas', () => {
 
 test('handle period', () => {
   expect(caesarCypher('a. b. c', 1)).toMatch(/bcd/);
+});
+
+test('handle different cases', () => {
+  expect(caesarCypher('AbC', 1)).toMatch(/bcd/);
 });
